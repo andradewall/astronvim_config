@@ -32,6 +32,14 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>rn"] = {
+      function() require('neotest').run.run() end,
+      desc = "Run test for nearest function",
+    },
+    ["<leader>rf"] = {
+      function() require("neotest").run.run(vim.fn.expand("%")) end,
+      desc = "Run test for current file",
+    }
   },
   t = {
     -- ToggleTerm

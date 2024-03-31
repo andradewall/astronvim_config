@@ -5,7 +5,8 @@ return {
   opts = {
     show_end_of_buffer = true,
     styles = {
-      keywords = { "italic" }
+      keywords = { "italic" },
+      loops = { "italic" },
     }
   }
 }
